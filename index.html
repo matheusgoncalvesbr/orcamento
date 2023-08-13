@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css" >
+    <title>Notas</title>
+</head>
+<style>
+    @media print {
+        .print{
+            display: block;
+            }
+        .formulario {
+            display: none;
+            }
+    }
+
+    @media (max-width: 600px) {
+        .caixa {
+            width: 300px;
+        }
+
+        .titulo {
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+        }
+
+
+
+    }
+</style>
+<body>
+    <div class="conteudo">
+        <h1 class="titulo1">Planilha Orçamentária</h1>
+        <p class="subtitulo">REMar - Arte do Fazer</p>
+    </div>
+
+        <!--Formulário para a empresa-->
+        <form class="formulario">
+            <div class="titulo">
+                <h1 class="titulo-txt">Empresa Responsável</h1>
+            </div>
+    
+            <div class="campo">
+                <input type="text" id="valor" class="caixa"  name="valor" placeholder="Razão Social" value="REMar - A arte do fazer">
+            </div>
+    
+            <div class="campo">
+                <input id="nome-pagador" class="caixa" type="text" placeholder="Responsável Técnico" value="Enio Alex Assunção">
+            </div>
+    
+            <div class="campo">
+                <input id="cpf-pagador" class="caixa"type="text" autocomplete="off" maxlength="14" placeholder="CNPJ" value="51686555/0001-70">
+            </div>
+    
+            <div class="campo">
+                <input id="referente" class="caixa"type="text" placeholder="Email de contato" value="remartedofazer@hotmail.com">
+            </div>
+    
+            <div class="campo">
+                <input id="cidade" class="caixa"type="text" placeholder="CPF" value="99445085604">
+            </div>
+    
+            <div class="campo">
+                <input id="nome-emissor" class="caixa"type="text" placeholder="Inscrição Estadal" value="124.659.253.115"> 
+            </div>
+    
+            <div class="campo">
+                <input class="caixa"type="text" autocomplete="off" maxlength="14" id="telefone" placeholder="Celular/WhatsApp" value="11986638488">
+            </div>
+
+            <div class="campo">
+                <input id="nome-emissor" class="caixa"type="text" placeholder="Endereço" value="Rua Gaspar Gomes, 92"> 
+            </div>
+
+            <div class="campo">
+                <input id="nome-emissor" class="caixa"type="text" placeholder="Bairro" value="Jardim Ester / São Paulo"> 
+            </div>
+
+        </form>
+
+        <!--Formulário para o cliente-->
+        <form class="formulario" >
+            <div class="titulo">
+                <h1 class="titulo-txt">Cliente</h1>
+            </div>
+    
+            <div class="campo">
+                <input type="number" id="valor" class="caixa"  name="valor" placeholder="Razão Social" >
+            </div>
+    
+            <div class="campo">
+                <input id="nome-pagador" class="caixa" type="text" placeholder="Responsável solicitante">
+            </div>
+
+            <div class="campo">
+                <input id="nome-pagador" class="caixa" type="text" placeholder="Contato via">
+            </div>
+    
+            <div class="campo">
+                <input id="referente" class="caixa"type="text" placeholder="Email de contato">
+            </div>
+
+            <div class="campo">
+                <input id="cpf-pagador" class="caixa"type="text" autocomplete="off" maxlength="14" placeholder="CPF">
+            </div>
+    
+            <div class="campo">
+                <input id="nome-emissor" class="caixa"type="text" placeholder="Data do pedido"> 
+            </div>
+    
+            <div class="campo">
+                <input class="caixa"type="text" autocomplete="off" maxlength="14" id="telefone" placeholder="Celular/WhatsApp">
+            </div>
+
+            <div class="campo">
+                <input id="nome-emissor" class="caixa"type="text" placeholder="Endereço"> 
+            </div>
+
+            <div class="campo">
+                <input id="nome-emissor" class="caixa"type="text" placeholder="Bairro"> 
+            </div>
+            
+        </form>
+
+        <!--Informações dos serviços-->
+
+        <form class="formulario">
+            <div class="titulo">
+                <h1 class="titulo-txt">Informações dos serviços</h1>
+            </div>
+
+            <div class="campo">
+                <textarea class="caixa" cols="30" rows="10" style="resize: none; height: 120PX;"  placeholder="Descrição da solicitação"></textarea>
+
+            </div>
+        </form>
+
+        <!--Itens presentes no orçamento-->
+
+        <form class="formulario">
+            <div class="titulo">
+                <h1 class="titulo-txt">Itens presentes no orçamento</h1>
+            </div>
+
+            <div class="campo">
+                <input type="text" class="caixa" placeholder="Peças">
+            </div>
+
+            <div class="campo">
+                <input type="text" class="caixa" placeholder="Descrição">
+            </div>
+
+            <div class="campo">
+                <input type="text" class="caixa" placeholder="Quantidaden de serviços">
+            </div>
+
+            <div class="campo">
+                <input type="text" class="caixa" placeholder="Material">
+            </div>
+
+            <div class="campo">
+                <input type="text" class="caixa" placeholder="Mão de obra">
+            </div>
+
+        </form>
+
+        <!--Formas de Pagamento-->
+
+        <form class="formulario">
+            <div class="titulo">
+                <h1 class="titulo-txt">Itens presentes no orçamento</h1>
+            </div>
+
+            <p>Forma de Pagamento:</p>
+
+            <div class="campo">
+                <select id="pagamento" class="caixa-pagamento">
+                    <option value="" selected="selected">Selecione</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Ted">Ted</option>
+                    <option value="Cheque">Cheque</option>
+                    <option value="Cartao">Cartão Débito/Crédito</option>
+                    <option value="Parcelado">Parcelado</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <input type="text" class="caixa" placeholder="Condições">
+            </div>
+
+        </form>
+
+
+        <!--Botão para gerar PDF-->
+
+        <div class="">
+            <button class="botao" onclick="gerar()">Gerar Recibo</button>
+        </div>
+    
+        <!--Recibo de pagamento para impressão - PDF-->
+        
+        <div class="print">
+            <h2 id="tituloprint">Recibo de Pagamento</h2>
+            <h3 id="recibo_valor">R$0,00</h3>
+            <p>Recebi(emos) de <strong id="recibo_nome"></strong> 
+                -CPF/CNPJ n° <strong id="recibo_cpfpagador"></strong>
+                ,a importância de <strong id="recibo_valorext"></strong>
+                referente à <strong id="recibo_Referente"></strong>. <br/>
+                Para maior clareza firmo(amos) o presente recibo para que produza os seus efeitos dandos plena, rasa e 
+                irrevogável quitação, pelo valor recebido. <br/>
+                Pagamento recebido por: <strong id="recibo_emissor">nome emissor</strong> - <strong id="recibo_pagamento"></strong>
+                <br/> <br/>
+    
+                <div id="cidadedata">
+                    <strong id="recibo_cidade">São Paulo</strong>, <strong id="recibo_data">22 de setembro de 2022</strong>
+                </div> <br/> <br/>
+    
+                <div id="assinatura">
+                  <div id="linha"></div>
+                  <div id="recibo_assinatura_emissor">Nome do emissor</div> 
+                  <div id="recibo_cpfemissor">000.000.000-00</div> 
+                  <div id="recibo_telefone">(00)0000-0000</div>  
+                </div> <br/>
+    
+                <strong id="recibo_obs">obs:</strong>
+            
+            </p>
+    
+        </div>
+    
+        <script src="pagamento.js"></script>
+</body>
+
+
+
+
+
+
+
+
+</html>

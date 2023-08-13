@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Sarala:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding:  0 ;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'sarala',sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: rgb(78, 77, 77);
+    width: 1000px;
+}
+
+.subtitulo {
+    font-family: 'roboto',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+   
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}
+
+
+.titulo {
+    margin-top: 10px;
+}
+
+.titulo-txt {
+    font-family: 'sarala',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+
+.caixa {
+    width: 1000px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0.1px solid rgba(0, 0, 0, 0.438);
+    background-color: rgba(58, 57, 57, 0.014);
+    font-size: 15px;
+}
+
+.caixa-pagamento{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0.1px solid rgba(0, 0, 0, 0.438);
+    background-color: rgba(58, 57, 57, 0.014);
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+
+
+
+/* Estilo Impressão do PDF */
+
+.botao {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: transparent;
+    background-color: rgb(76, 158, 224);
+}
+
+.print {
+    font: arial 18pt;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 5px;
+    width: 700px;
+    display: none;
+}
+
+p {
+    font: arial 18pt;
+    margin-top: 20PX;
+}
+
+#tituloprint {
+    text-align: center;
+    font: familyfans;
+    color: rgb(15, 15, 15);
+}
+
+#recibo_valor {
+    margin-left: 570px;
+    font: 18pt;
+}
+
+#linha{
+    margin:0 auto;
+    width: 50%;
+    border-top: 1px solid black;
+    width: 150px;
+}
+
+#assinatura {
+    text-align: center;
+    margin-top: 20px ;
+}
+
+#cidadedata {
+    margin-left: 425px;
+}
+
+#data {
+    display: none;
+}
+
+
+
